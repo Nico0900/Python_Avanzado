@@ -1,5 +1,4 @@
-#Camelcase : cada primera letra de palabra es mayuscula (LlaveString)
-#Snakecase : cada palabra se separa por un guion bajo (_)
+
 {
     "llave_string" : "Texto",
     "otro_string" : "Texto"
