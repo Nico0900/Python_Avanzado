@@ -1,5 +1,31 @@
 
 {
     "llave_string" : "Texto",
-    "otro_string" : "Texto"
+    "otro_string" : "Texto",
+    "entero" : 1,
+    "decimal" : 1.2,
+    "booleano1" : true,
+    "booleano2" : false,
+    "nulo" : null,
+
+    "array" : [1,2,3],
+
+    "objeto" : {
+        "nombre" : "nicolas",
+        "apellido" : "vargas"
+    },
+
+    "personas" : [
+        {
+        "nombre" : "nicolas1",  
+        "apellido" : "vargas1" 
+        },
+        {
+        "nombre" : "nicolas2", 
+        "apellido" : "vargas2"  
+        }
+    ]
+        
+
 }
+
