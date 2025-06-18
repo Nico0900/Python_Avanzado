@@ -31,6 +31,8 @@ JSON puede manejar los siguientes tipos de datos:
 
 ## Estructura de un Objeto JSON
 
+Dependiendo del lenguaje en el que se vaya a usar, se puede usar camelCase. Vamos a definir la llave string con camelCase, que quiere decir que, para identificar cada palabra de la llave, separo por la primera letra de la siguiente palabra en mayúscula. También se pueden escribir en snake case, que quiere decir que cada palabra se separa por un guion bajo de la siguiente. 
+
 ```json
 {
   "nombre": "Juan",
