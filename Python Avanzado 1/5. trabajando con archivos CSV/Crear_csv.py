@@ -11,6 +11,6 @@ ruta_absoluta = "C:\\Users\\PC Acer\\Documents\\GitHub\\CursoPython\\Curso_Pytho
 ruta_absoluta_os = os.path.join(os.getcwd(), "csv_vacio.csv")
 
 
-archivo_abierto = open(ruta_absoluta, "w")
+archivo_abierto = open(ruta_absoluta_os, "w")
 writer = csv.writer(archivo_abierto, delimiter=",")
 archivo_abierto.close()
