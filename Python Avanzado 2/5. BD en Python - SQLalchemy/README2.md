@@ -1,18 +1,18 @@
 # Bases de Datos en Python con SQLAlchemy
 
 ## Las Bases de datos  
-    permiten almacenar, consultar, modificar y eliminar datos de manera eficiente.  
-    En Python, una de las librerias mas utilizadas para trabajar con bases de datos es SQLAlchemy.  
-    SQLAlchemy es un ORM (Object Relational Mapper) que permite interactuar con bases de datos de manera sencilla y eficiente.  
-    En este ejemplo, vamos a crear una conexion a una base de datos SQLite utilizando SQLAlchemy.
+permiten almacenar, consultar, modificar y eliminar datos de manera eficiente.  
+En Python, una de las librerias mas utilizadas para trabajar con bases de datos es SQLAlchemy.  
+SQLAlchemy es un ORM (Object Relational Mapper) que permite interactuar con bases de datos de manera sencilla y eficiente.  
+En este ejemplo, vamos a crear una conexion a una base de datos SQLite utilizando SQLAlchemy.
 
 # Existen las bases de datos relacionales y no relacionales.
 
 # Relacionales  
-    Las bases de datos relacionales utilizan tablas para almacenar los datos y permiten realizar consultas complejas utilizando SQL (Structured Query Language). Estas bases de datos son ideales para aplicaciones que requieren integridad referencial y transacciones. 
+Las bases de datos relacionales utilizan tablas para almacenar los datos y permiten realizar consultas complejas utilizando SQL (Structured Query Language). Estas bases de datos son ideales para aplicaciones que requieren integridad referencial y transacciones. 
 
 # No Relacionales  
-    Por otro lado, las bases de datos no relacionales (NoSQL) son más flexibles y permiten almacenar datos en formatos no estructurados, como documentos o grafos.
+Por otro lado, las bases de datos no relacionales (NoSQL) son más flexibles y permiten almacenar datos en formatos no estructurados, como documentos o grafos.
 
 ---
 
@@ -32,7 +32,7 @@ Cada una de estas bases de datos tiene sus propias características y ventajas, 
 ---
 
 # ORM
-Existen las **ORM (Object Relational Mapper)** Librerias especializadas para la manipulación de bases de datos.  
+Existen las **ORM (Object Relational Mapper)**, son Librerias especializadas para la manipulación de bases de datos.  
 Usualmente una tabla de la base de datos es representada por una clase de Python, y cada fila de la tabla es representada por un objeto de esa clase o modelo. También cada columna de la tabla es representada por un atributo de la clase, donde se define el tipo de dato de cada atributo, y se pueden definir relaciones entre tablas utilizando atributos de tipo ForeignKey o PrimaryKey (llave foránea o llave primaria).
 Cuando damos uso a una ORM, no necesitamos escribir consultas SQL directamente, sino que utilizamos métodos y atributos de las clases para realizar operaciones en la base de datos. Esto nos permite trabajar con bases de datos de manera más intuitiva y orientada a objetos.
 
