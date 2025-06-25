@@ -1,9 +1,12 @@
 import time
 
-
+"""
+un decorador es una función que recibe otra función como argumento y devuelve una nueva función que generalmente la modifica y la retorna
+"""
 def medir_tiempo_ejecucion(funcion):
 
-    def wrapper():
+    def wrapper(): #Funcion envoltura que añade funcionalidad
+        print("Iniciando la medición del tiempo de ejecución...")
         inicio = time.time()
         funcion()
         fin = time.time()
