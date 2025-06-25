@@ -6,7 +6,8 @@ type hinting  en funciones
 
 """
 
-def calcular_perimetro_cuadrado(lado : int) -> int:
-    return 4* lado
+def calular_perimetro_cuadrado(lado: int) -> int:
+    return 4 * lado
 
-print(calcular_perimetro_cuadrado(lado="5"))
+
+print(calular_perimetro_cuadrado(lado="5"))

@@ -1,5 +1,11 @@
 from typing import Dict, List, Mapping, Tuple
 
+"""
+es cuando se declara junto a su valor el tipo de variable que junto a su libreria
+    Ejemplo 
+        nombre_variable : tipo_variable = Valor_variable
+
+"""
 
 nombre: str
 nombre = "Ana"
