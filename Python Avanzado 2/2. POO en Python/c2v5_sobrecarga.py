@@ -5,7 +5,9 @@ class Persona:
         self.edad = edad
         self.distancia_recorrida = 0
 
-    def __add__(self, distancia):
+    def __add__(self, distancia): ## Sobrecarga del operador + ##
+        """Permite sumar una distancia a la distancia recorrida por la persona."""
+        """distancia : es la distancia que se le suma a la distancia recorrida"""
         self.distancia_recorrida += distancia
         return self.distancia_recorrida
 
