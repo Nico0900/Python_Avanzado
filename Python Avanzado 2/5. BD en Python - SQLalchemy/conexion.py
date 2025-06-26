@@ -9,6 +9,14 @@ from sqlalchemy import create_engine
 """
 
 from sqlalchemy.ext.declarative import declarative_base
+"""
+    [ from sqlalchemy.ext.declarative import declarative_base ]
+
+    declarative_base : 
+        Crea una clase base para los modelos de la base de datos.
+        Esta clase base es utilizada para definir los modelos que representan las tablas de la base de datos.
+        Los modelos heredan de esta clase base y definen los atributos que corresponden a las columnas de las tablas, Permite utilizar SQLAlchemy de manera declarativa, facilitando la definicion de modelos y la interaccion con la base de datos.
+"""
 
 
 from sqlalchemy.orm import sessionmaker
@@ -37,5 +45,18 @@ engine = create_engine(f"sqlite:///{database_name}")
 
 Session = sessionmaker(bind=engine)
 session = Session()
+"""
+    [ Session = sessionmaker(bind=engine) ]
+    Crea una clase de sesion que se conecta al motor de la base de datos.
+"""
+
 
 ModeloBase = declarative_base()
+"""
+    [ ModeloBase = declarative_base() ]
+    
+    Crea una clase base para los modelos de la base de datos.
+    Esta clase base es utilizada para definir los modelos que representan las tablas de la base de datos.
+    Los modelos heredan de esta clase base y definen los atributos que corresponden a las columnas de las tablas.
+    Permite utilizar SQLAlchemy de manera declarativa, facilitando la definicion de modelos y la interaccion con la base de datos.
+"""
