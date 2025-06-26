@@ -6,23 +6,30 @@ from conexion import engine, ModeloBase, session
 
 """creamos la funcion guardar_datos que se encarga de insertar datos en la base de datos"""
 def guardar_datos():
-    contabilidad = Departamento("Contabilidad")
-    """creamos un objeto Departamento con el nombre 'Contabilidad'"""
-    session.add(contabilidad)
-    """agregamos el departamento de contabilidad a la sesion"""
-    tecnologia = Departamento("Tecnología")
-    """creamos un objeto Departamento con el nombre 'Tecnología'"""
-    session.add(tecnologia)
-    """agregamos el departamento de tecnologia a la sesion"""
+    contabilidad = session.query(Departamento).filter_by(nombre="Contabilidad").first()
+    if not contabilidad:
+        contabilidad = Departamento("Contabilidad")
+        """creamos un objeto Departamento con el nombre 'Contabilidad'"""
+        session.add(contabilidad)
+        """agregamos el departamento de contabilidad a la sesion"""
+
+    tecnologia = session.query(Departamento).filter_by(nombre="Tecnología").first()
+    if not tecnologia:
+        tecnologia = Departamento("Tecnología")
+        """creamos un objeto Departamento con el nombre 'Tecnología'"""
+        session.add(tecnologia)
+        """agregamos el departamento de tecnologia a la sesion"""
+
     session.commit()
     """guardamos los cambios en la base de datos"""
 
     emilio = Empleado("Emilio", "Tafur", "123", contabilidad.id)
-    session.add(emilio)
     javier = Empleado("Javier", "Quiñonez", "1234", tecnologia.id)
     """creamos un objeto Empleado con el nombre 'Emilio', apellido 'Tafur', documento '123' y el id del departamento de contabilidad"""
-    session.add(javier)
+    session.add(emilio)
     """agregamos el empleado Emilio a la sesion"""
+    session.add(javier)
+
     session.commit()
     """guardamos los cambios en la base de datos"""
 
@@ -43,7 +50,7 @@ def hacer_consultas():
 
     empleados_contabilidad = session.query(Empleado).filter_by(
         id_departamento=departamento_1.id
-    ).first()
+    ).all()
     """obtenemos el primer empleado del departamento de contabilidad"""
     """filtramos los empleados por el id del departamento de contabilidad"""
     print(empleados_contabilidad)
