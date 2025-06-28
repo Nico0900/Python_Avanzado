@@ -16,7 +16,7 @@ def es_numero_primo(numero):
 class Test(unittest.TestCase):
 
     def test_numero_menor_1(self):
-        numero = 1
+        numero = 1 # caso de prueba para un numero menor o igual a 1"
         resultado = es_numero_primo(numero)
         self.assertTrue(resultado)
 
@@ -26,7 +26,7 @@ class Test(unittest.TestCase):
         self.assertEqual(False, resultado)
 
     def test_numero_primo_true(self):
-        numero = "2"
+        numero = "2" # esto es un muestra de un error causado por un String donde deberia ser un entero, para poder visualizar el error
         resultado = es_numero_primo(numero)
         self.assertTrue(resultado)
 
